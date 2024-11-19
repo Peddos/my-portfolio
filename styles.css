@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #202020;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('20231225_135516.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: inline-block;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+.hero-content .name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content .description {
+    font-size: 1.5rem;
+}
+
+.hero-content .highlight {
+    color: #f39c12;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+/* About Section */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #202020;
+    color: #fff;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #101010;
+    color: #fff;
+}
+/* Style for Contact Links */
+.section#contact a {
+    color: #007bff; /* Blue color for links */
+    font-weight: bold;
+    text-decoration: none; /* Removes the underline */
+}
+
+.section#contact a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.section#contact a:visited {
+    color: #5e1848; /* Ensures visited links stay blue */
+}
