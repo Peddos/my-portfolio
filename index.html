@@ -3,76 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Maina - Portfolio</title>
+    <title>John Maina | Systems Architect</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">JM<span class="highlight">.</span></a>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn-primary-outline">Contact</a></li>
             </ul>
-        </nav>
-        <div class="hero-content">
-            <p class="tagline">Hello <span class="highlight">I'm</span></p>
-            <h1 class="name">John Maina</h1>
-            <p class="description">An aspiring tech leader with a passion for <span class="highlight">Networking</span> & <span class="highlight">Cybersecurity</span>.</p>
-            <a href="#about" class="cta-button">About Me</a>
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm <strong>John Maina</strong>, a passionate third-year Education major at Tharaka University with a deep interest in technology, cybersecurity, and marketing. 
-            I thrive in leadership roles, having led a team to the Microsoft Inter-University Hackathon, and I enjoy working on projects that bridge the gap between 
-            innovation and real-world application. With extensive knowledge in networking and cybersecurity, coupled with a love for personal development, 
-            I am committed to growth and making an impact.
-        </p>
-    </section>
-<section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Leadership:</strong> Leading diverse teams and managing projects effectively.</li>
-            <li><strong>Technical Skills:</strong> Web development (HTML, CSS, JavaScript, Python, Django), Networking, Cybersecurity Basics.</li>
-            <li><strong>Marketing:</strong> Sales strategies, social media marketing, and client engagement.</li>
-            <li><strong>Personal Development:</strong> Strong foundation in finance and psychology to enhance problem-solving and decision-making.</li>
-        </ul>
-</section>
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Investment Platform - "The Intelligent Investor":</strong>
-            A Django-based platform allowing users to invest in Kenyan shillings with referral systems and clear investment guidelines.
-        </li>
-        <li>
-            <strong>Hackathon Project - Microsoft Inter-University:</strong>
-            Collaborated on a tech solution to address community-based challenges, leveraging team strengths and innovation.
-        </li>
-        <li>
-            <strong>AI-Driven CBC Enrollment System:</strong>
-            Designed for the KAPS Hackathon to automate senior school enrollment under the Competency-Based Curriculum.
-        </li>
-    </ul>
-</section >
-<section id="contact" class="section">
-    <h2>Contacts</h2>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:john.maina@example.com">njogujohn589@gmail.com</a></li>
-        <li><strong>Phone:</strong> +254 794 115 740 </li>
-        <li><strong>LinkedIn:</strong> <a href="https://https://www.linkedin.com/in/john-maina-2a12172b2/" target="_blank">linkedin.com/in/john-maina</a></li>
-    </ul>
-</section>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">John Maina</h1>
+                    <h2 class="role">Software Developer & Systems Architect</h2>
+                    <p class="description">
+                        I am a software developer and systems architect from Kenya, specializing in web development, cybersecurity, and autonomous AI frameworks. I build scalable applications and data-driven systems designed to optimize real-world logistics and empower communities.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Projects <i class="ph ph-arrow-right"></i></a>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/john-maina-910990403/" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                            <a href="mailto:njogujohn589@gmail.com" aria-label="Email"><i class="ph-fill ph-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="rbKqFzTK_400x400.jpg" alt="John Maina">
+                        <div class="glow-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Add Skills, Projects, and Contact sections here -->
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I am</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I am a Software Developer and Systems Architect specializing in data-driven supply chain optimization, web application development, and multi-agent AI environments. Currently completing my studies at Tharaka University, my work bridges the gap between theoretical innovation and practical, real-world application.
+                    </p>
+                    <p class="about-text">
+                        I build robust, scalable solutions—from deploying full-stack logistics platforms like GoSwift to architecting autonomous AI agent factories. My approach is rooted in the SCID framework, prioritizing foundational values and systemic logic to build sustainable, highly optimized environments. Whether I am leading diverse teams in national hackathons or designing agricultural tech ecosystems, my focus remains on predicting market trends and building the logistics of shared success.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">What I do</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ph ph-code"></i>
+                            <h3>Development</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Supabase</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ph ph-hard-drives"></i>
+                            <h3>Architecture & AI</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">System Architecture</span>
+                            <span class="tag">AI Orchestration</span>
+                            <span class="tag">Multi-agent Environments</span>
+                            <span class="tag">Supply Chain Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ph ph-shield-check"></i>
+                            <h3>Security & Infrastructure</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ph ph-users-three"></i>
+                            <h3>Leadership & Management</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">Team Leadership</span>
+                            <span class="tag">Project Management</span>
+                            <span class="tag">Agile Methodologies</span>
+                            <span class="tag">Marketing & Sales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">GoSwift Logistics Platform</h3>
+                            <p class="project-desc">A full-stack logistics platform designed for efficient delivery management, vendor coordination, and seamless customer experiences.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">The Intelligent Investor</h3>
+                            <p class="project-desc">A Django-based financial platform allowing users to securely invest in Kenyan shillings, complete with referral systems and strategic investment tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Data Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">AI-Driven CBC System</h3>
+                            <p class="project-desc">Designed for the KAPS Hackathon, this system automates senior school enrollment under the Competency-Based Curriculum using intelligent AI workflows.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AI Automation</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Let's Build Together</h2>
+                        <p class="contact-subtitle">Interested in collaborating on a project or exploring new opportunities? Let's connect.</p>
+                    </div>
+                    
+                    <div class="contact-info-grid">
+                        <a href="mailto:njogujohn589@gmail.com" class="contact-item">
+                            <div class="icon-box">
+                                <i class="ph ph-envelope-simple"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>njogujohn589@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="ph ph-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+254 794 115 740</p>
+                            </div>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/john-maina-910990403/" target="_blank" class="contact-item">
+                            <div class="icon-box">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>john-maina-910990403</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 John Maina. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2026 John Maina. Designed & Architected with precision.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/john-maina-910990403/" target="_blank"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="mailto:njogujohn589@gmail.com"><i class="ph-fill ph-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navLinks.classList.remove('active'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
